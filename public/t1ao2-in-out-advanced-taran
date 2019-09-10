@@ -1,0 +1,20 @@
+<input type=text id="myText01" value="3"><br>
+
+<input type=button value="Input/Output" onClick="{
+
+	let myTemp=document.getElementById('myText02').value
+	document.getElementById('myDiv01').innerHTML = myTemp
+
+}">
+
+<div id="myDiv01">...</div>
+<input type=text id="myText02" value="9"><br>
+
+<input type=button value="Input/Output" onClick="{
+
+	let myTemp=document.getElementById('myText02').value
+	document.getElementById('myDiv02').innerHTML = myTemp
+
+}">
+
+<div id="myDiv02">...</div>
