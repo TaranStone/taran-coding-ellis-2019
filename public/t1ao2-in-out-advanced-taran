@@ -8,6 +8,7 @@
 }">
 
 <div id="myDiv01">...</div>
+
 <input type=text id="myText02" value="9"><br>
 
 <input type=button value="Input/Output" onClick="{
@@ -18,3 +19,7 @@
 }">
 
 <div id="myDiv02">...</div>
+
+if(myTemp==9){
+document.getElementById('myDiv01').innerHTML= 'insert funny joke here'
+}
