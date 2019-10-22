@@ -2,7 +2,7 @@
 
 Enter any number of loops <input type=text id="myText01" value="70"><br><br>
 
-<input type=button vlue="Modulus Decisions"onclick="{
+<input type=button value="Modulus Decisions" onclick="{
 
    let myLoopMax = document.getElementById('myText01').value
    let myTemp = ''
@@ -16,6 +16,23 @@ Enter any number of loops <input type=text id="myText01" value="70"><br><br>
 	 myFontColour = 'algae'
 	 myMessage += ' Divisible by 5 '
       }
+
+
+      	if (myLoop % 10 ==0) {
+		 myFontColour = 'blue'
+		 myMessage += 'Divisible by 10 '
+      		}
+
+
+      		if (myLoop % 43 ==0) {
+			 myFontColour = 'red'
+			 myMessage += ' Mr. Ellis wanted this highlighted '
+    		  	}
+
+			if (myLoop % 57 ==0) {
+				 myFontColour = 'cyan'
+			 	myMessage += ' Mr. Ellis wanted this highlighted '
+    		  		}
 
       myTemp += '<font color='+myFontColour+'> Loop # ' + myLoop + '</font>'+ myMessage +'<br>'
     }
