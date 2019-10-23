@@ -4,17 +4,24 @@ Objects, Decisions, Decimals by Taran</h1>
 
 Body Temp: <input type=text id="myText01" value="36.1">degrees Celcius<br>
 
-<input type=text id="myText01" value="3"><br>
+<input type=text id="myText01" value="0"><br>
 
 <input type=button value="Input/Output" onClick="{
-   let myPerson = {'age':'22', 'name':'Taran'};
+   let myPerson = {'age':'65', 'name':'Taran'};
    
    let myTemp=document.getElementById('myText01').value
 	
    let myPrintout = 'myPerson object :' +
 JSON.stringify(myPerson, null, 3) + ' myPerson.age : ' + myPerson.age
-   let myIf = 'cool'
-   if ( parseInt(myPerson.age) >=20 {myIf = 'You are an adult'}
+   let myIf = 'cool'   
+   if ( parseInt(myPerson.age) >=20) {myIf = 'You are an adult'}
+       if ( parseInt(myPerson.age) >=13) {myIf = 'You are a teen'}
+	  if ( parseInt(myPerson.age) <=12) {myIf = 'You are a child'}
+	     if ( parseInt(myPerson.age) >=65) {myIf = 'You are able to retire'}
+
+
+   
+
 
    document.getElementById('myDiv01').innerHTML = myIf
    document.getElementById('myTextArea01').value = myPrintout
