@@ -1,0 +1,69 @@
+<h1>t1a08-javascript-css-taran.html<h1>
+
+<input type=button value="change" style="background-color:green; color:orange; " onClick="{ 
+    document.getElementById('myB01').style.color = 'brown'
+}">
+<b id="myB01"  style="color:white"> Aii it works</b><br><br>
+
+<input type=button value="change" style="background-color:red; color:cyan; " onClick="{ 
+    document.getElementById('myB02').style.color = 'pink'
+}">
+<b id="myB02"  style="color:blue"> It works</b><br><br>
+<input type=button value="change" style="background-color:violet; color:yellow; " onClick="{ 
+    document.getElementById('myB03').style.color = 'blue'
+}">
+<b id="myB03"  style="color:black"> This works too</b><br><br>
+
+<input type=button value="change" style="background-color:blue; color:red; " onClick="{ 
+    document.getElementById('myB04').style.color = 'green'
+}">
+<b id="myB04"  style="color:black"> This works too</b><br><br>
+
+<select id="myText01" size=1 onChange="{
+   let myTemp = document.getElementById ('myText01').value 
+   document.getElementById('myDiv01').style.borderStyle = myTemp
+}">
+
+<option value="groove">Groove
+<option value="dotted">Dotted
+<option value="ridge">Ridge
+<option value="outset">Outset
+<option value="solid">Solid
+<option value="double">Double
+<option value="dashed">Dashed
+<option value="inset">Inset
+<option value="none">None
+</select>
+
+
+<span id="myDiv01" style="border-style:groove; border-width:10; 
+border-color:orange" >
+This is a box/border</span><br><br>
+
+
+
+<select id="myText02" size=1 onChange="{
+   let myTemp = document.getElementById ('myText02').value
+   document.getElementById('myDiv02').style.color = myTemp
+}">
+
+<option value="blue">Blue
+<option value="red">Red
+<option value="yellow">Yellow
+<option value="orange">Orange
+<option value="green">Green
+<option value="black">Black
+<option value="indigo">Indigo
+
+</select>
+<span id="myDiv02" style="color:blue" >
+This is a colour changer thing</span>
+
+<style>
+body {
+  background-color: cyan;
+}
+h1 {
+  color: yellow;
+}
+</style>
