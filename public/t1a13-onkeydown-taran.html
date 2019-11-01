@@ -1,15 +1,22 @@
-<script>
+ <script>
    let myInterval
 
 function myIsOnScreen(){
-   if (parseInt(document.getElementById('myDiv01').style.left) > 1540) {
-     document.getElementById('myDiv01').style.left = '1535px'
+   if (parseInt(document.getElementById('myDiv01').style.left) > 400) {
+     document.getElementById('myDiv01').style.left = '397px'
+   }
+}
+
+function myIsOnScreen(){
+if (parseInt(document.getElementById('myDiv02').style.left) > 400) {
+document.getElementById('myDiv02').style.left = '397px'
+ 
    }
 }
 
 
-
 </script>
+
 <body onkeydown="{
     let myKey = event.key
 
@@ -99,10 +106,12 @@ function myIsOnScreen(){
 
 <h1 align=center>t1a13-onkeydown-taran</h1>
 
-<div id="myDiv01" style="position:absolute; left:770; top:200; " >Taran</div
-<div id="myDiv02" style="position:absolute; left 770; top:200; " >Owen</div
+<p>Use WASD for "Taran" and IJKL for "Owen"</p>
+
+<div id="myDiv01" style="position:absolute; left:200; top:200; " >Taran</div>
+<div id="myDiv02" style="position:absolute; left:200; top:150; " >Owen</div>
   
 
-}">
+
 
 </body>
