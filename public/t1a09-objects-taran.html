@@ -1,34 +1,27 @@
-<h1 align=center> t1ao9-objects-fred.html<br>
+<h1 align=center> tla09-objects by Taran<br>
 
-Objects, Decisions, Decimals by Taran</h1>
+Objects, decisions, decimals by Taran</h1>
+
+You add bodyTemp and determine if the user has a fever.<br>
+advanced: Input the body temp into the object<br>
 
 Body Temp: <input type=text id="myText01" value="36.1">degrees Celcius<br>
 
-<input type=text id="myText01" value="0"><br>
-
-<input type=button value="Input/Output" onClick="{
-   let myPerson = {'age':'65', 'name':'Taran'};
-   
-   let myTemp=document.getElementById('myText01').value
-	
-   let myPrintout = 'myPerson object :' +
-JSON.stringify(myPerson, null, 3) + ' myPerson.age : ' + myPerson.age
-   let myIf = 'cool'   
-   if ( parseInt(myPerson.age) >=20) {myIf = 'You are an adult'}
-       if ( parseInt(myPerson.age) >=13) {myIf = 'You are a teen'}
-	  if ( parseInt(myPerson.age) <=12) {myIf = 'You are a child'}
-	     if ( parseInt(myPerson.age) >=65) {myIf = 'You are able to retire'}
-
-
-   
-
-
-   document.getElementById('myDiv01').innerHTML = myIf
-   document.getElementById('myTextArea01').value = myPrintout
-
-
-
+<input type=button value="input/Output" onclick="{
+let myPerson = { 'age':'22', 'name':'Taran'};
+let myTemp = document.getElementById('myText01').value
+let myPrintout = 'myPerson object :' + JSON.stringify(myPerson, null, 3)
++ ' myPerson.age :  ' + myPerson.age
+let myIf = 'cool'
+if ( parseInt(myPerson.age) >= 20) {myIf = 'You are an adult' }
+    if ( parseInt(myTemp) == 36 | 37) {myIf = 'You are healthy'}
+      if ( parseInt(myTemp) <= 35) {myIf = 'Body temperature is low, go to the doctor'}
+        if ( parseInt(myTemp) >= 38) {myIf = 'You are ill, go to the doctor.'}
+document.getElementById('myDiv01').innerHTML = myIf
+document.getElementById('myTextArea01').value = myPrintout
 }">
 
-<div id="myDiv01">...</div>
+<div id="myDiv01">...</div><br>
 <textarea id="myTextArea01" rows=10 cols=80 noWRAP>...</textarea>
+
+
