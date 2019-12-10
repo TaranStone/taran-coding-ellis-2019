@@ -1,0 +1,34 @@
+<h2>t2a10-local-storage-name by Taran</h2>
+<font color="white"
+
+<body onload="{
+   myStorage = localStorage.getItem('myStoredText')
+   ife(myStorage !=null){
+      document.getElementById('myText01').value = myStorage
+   }
+}">
+
+<body onunload="{
+   Localstorage.setItem('myStoredText' ,document.getElementById('myText01').value)
+}">
+
+Text Example: <input id="myText01" type=text size=70 value="" placeholder="Write Here To Store"><br>
+
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoredText', document.getElementById('myText01').value)
+   alert(document.getElementById('myText01').value + 'Has been stored')
+   document.getElementById('myText01').value = ''
+}">
+
+<input type=button value="Retrieve Text" onClick="{
+   document.getElementById('myText01').value = localStorage.getItem('myStoredText')
+}">
+
+<style>
+body { 
+background-image: url('http://www.rickdoble.net/low_resolution/1.jpg');
+}
+h2 { 
+color: white;
+}
+</style>
