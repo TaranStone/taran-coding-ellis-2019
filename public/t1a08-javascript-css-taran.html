@@ -42,22 +42,27 @@ This is a box/border</span><br><br>
 
 
 
-<select id="myText02" size=1 onChange="{
-   let myTemp = document.getElementById ('myText02').value
-   document.getElementById('myDiv02').style.color = myTemp
-}">
+<h1>Current Time&Date</h1>
 
-<option value="blue">Blue
-<option value="red">Red
-<option value="yellow">Yellow
-<option value="orange">Orange
-<option value="green">Green
-<option value="black">Black
-<option value="indigo">Indigo
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click For Date</button>
 
-</select>
-<span id="myDiv02" style="color:blue" >
-This is a colour changer thing</span>
+<p id="demo"></p>
+
+<html>
+<head>
+<style>
+img {
+  border-radius: 16px;
+}
+</style>
+</head>
+<img src="
+https://pbs.twimg.com/profile_images/1195866875294449664/t-sSD2zk_400x400.jpg"
+>
+
+
 
 <style>
 body {
