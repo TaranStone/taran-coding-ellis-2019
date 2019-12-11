@@ -8,12 +8,13 @@ advanced: Input the body temp into the object<br>
 Body Temp: <input type=text id="myText01" value="36.1">degrees Celcius<br>
 
 <input type=button value="input/Output" onclick="{
-let myPerson = { 'age':'22', 'name':'Taran'};
+let myPerson = { 'age':'16', 'name':'Taran'};
 let myTemp = document.getElementById('myText01').value
 let myPrintout = 'myPerson object :' + JSON.stringify(myPerson, null, 3)
 + ' myPerson.age :  ' + myPerson.age
 let myIf = 'cool'
 if ( parseInt(myPerson.age) >= 20) {myIf = 'You are an adult' }
+   if ( parseInt(myPerson.age) <= 20) {myIf = 'You are a teen or a child' }
     if ( parseInt(myTemp) == 36 | 37) {myIf = 'You are healthy'}
       if ( parseInt(myTemp) <= 35) {myIf = 'Body temperature is low, go to the doctor'}
         if ( parseInt(myTemp) >= 38) {myIf = 'You are ill, go to the doctor.'}
